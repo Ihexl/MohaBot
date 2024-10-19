@@ -49,7 +49,7 @@ async def title(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('8087343908:AAHbWMRAszEEwbcE6QjYf6Dbg_OhgNRpXwM').build()
+    application = ApplicationBuilder().token('urtoken').build()
     
     start_handler = CommandHandler('start', start)
     echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)  
